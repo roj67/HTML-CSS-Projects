@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survery</title>  
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">Survey On Web Development</h1>
+        <p id="description">In this survey you are asked some question about web development.</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label">Name: <input type="text" id= "name" placeholder="Enter your name" required></label>
+                <label id ="email-label">Email: <input type="email" id="email" placeholder="Enter your email" required> </label>
+                <label id="number-label">Age(optional): <input type="number" min="10" max="120" id="number" placeholder="Enter your age"> </label>
+                <label>What is your current job?
+                    <select id="dropdown">
+                        <option value="">Select what suits you the best</option>
+                        <option value="1">Student</option>
+                        <option value="2">Full time worker</option>
+                        <option value="3">Prefer not to say</option>
+                        <option value="4">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    Do you think web development is a good career?
+                        <label><input type="radio" class="inline" Value="Radio" name="yes/no">Yes</label>
+                        <label><input type="radio" class="inline" Value="Radio" name="yes/no">No</label>
+                        <label><input type="radio" class="inline" Value="Radio" name="yes/no">Don't Know</label>
+                </label>
+                <label>
+                    What do you prefer in web?
+                    <label><input type="checkbox" value="preference">Frontend development</label>
+                    <label><input type="checkbox" value="preference">Backend development</label>
+                    <label><input type="checkbox" value="preference">Fullstack development</label>
+                    <label><input type="checkbox" value="preference">UI/UX design</label>
+                    <label><input type="Checkbox" value="preference">Web app development</label>
+                    <label><input type="checkbox" value="preference">Web content manager</label>
+                    <label><input type="checkbox" value="preference">SEO specialist</label>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    Any comments or suggestions?
+                    <textarea name="comments" rows="4" cols="30" placeholder="Enter your comment here"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </body>
+    <footer>
+        Thank you for you time!
+    </footer>
+</html>
